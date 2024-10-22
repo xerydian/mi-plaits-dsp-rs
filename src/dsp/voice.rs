@@ -415,7 +415,7 @@ impl<'a> Voice<'a> {
             if modulations.trigger_patched && !modulations.timbre_patched {
                 // Disable internal envelope on TIMBRE, and enable the envelope generator
                 // built into the chiptune engine.
-                internal_envelope_amplitude_timbre = 0.0;
+                // internal_envelope_amplitude_timbre = 0.0;
                 // Envelope shape is determined by TIMBRE modulation amount. A minimum value
                 // is forced to prevent infinite decay time.
                 self.chiptune_engine
